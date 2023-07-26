@@ -1,0 +1,32 @@
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.container-tags-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-tags-stars__icon--colorred {
+  color: rgb(255, 96, 96);
+}
+
+.container-tags-stars__icon--color-grey {
+  color: #f3f3f3;
+}
+
+.tags {
+  height: 25px;
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5px 15px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 25px;
+}

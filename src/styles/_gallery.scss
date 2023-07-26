@@ -1,0 +1,35 @@
+.gallery_container {
+  width: min(1240px, 80%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  min-height: 200px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+.gallery_item {
+  width: 90%;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: 30px auto;
+  position: relative;
+
+  span {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+}

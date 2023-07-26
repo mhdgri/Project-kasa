@@ -1,0 +1,33 @@
+.banner {
+  width: min(1240px, 80%);
+  border-radius: 25px;
+  background: #000;
+  margin: 0 auto;
+  min-height: 200px;
+  overflow: hidden;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  font-weight: 300;
+}

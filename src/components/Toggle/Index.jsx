@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Toggle({ title, children }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,9 +15,9 @@ function Toggle({ title, children }) {
       <h1 onClick={handleToggle}>
         {title}{' '}
         <span>
-          <i
-            className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}
-          ></i>
+          <FontAwesomeIcon
+            icon={isOpen ? faChevronUp : faChevronDown}
+          ></FontAwesomeIcon>
         </span>
       </h1>
       <div className={`toggle-text ${isOpen ? 'open' : ''}`}>

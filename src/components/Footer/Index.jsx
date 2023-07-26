@@ -5,9 +5,9 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
-      <img src={logo} alt="Logo de Kasa" />
-      <p>© {year} Kasa. All rights reserved</p>
+    <footer className="footer">
+      <img className="footer__logo" src={logo} alt="Logo de Kasa" />
+      <p className="footer__text">© {year} Kasa. All rights reserved</p>
     </footer>
   );
 }

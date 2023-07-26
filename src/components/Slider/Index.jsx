@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import Banner from '../Banner/Index'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 function Slider({ images }) {
   const [current, setCurrent] = useState(0)
@@ -15,13 +17,13 @@ function Slider({ images }) {
 
   return (
     <div className="slider">
-      <div className="next_slider" onClick={() => handleNext()}>
-        <i className="fa-solid fa-chevron-right"></i>{' '}
+      <div className="next_slider" onClick={handleNext}>
+        <FontAwesomeIcon icon={faChevronRight} />
       </div>
-      <div className="previous_slider" onClick={() => handlePrevious()}>
-        <i className="fa-solid fa-chevron-left"></i>
+      <div className="previous_slider" onClick={handlePrevious}>
+      <FontAwesomeIcon icon={faChevronLeft} />
       </div>
-      <Banner urlImage={images[current]} height="415px" />
+      <Banner urlImage={images[current]} height="415px" width="100%"/>
     </div>
   )
 }

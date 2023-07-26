@@ -1,8 +1,11 @@
 import React from 'react'
+import './style.scss'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './style.css'
+//import './style.css'
 import reportWebVitals from './reportWebVitals'
+
+
 
 // Import des pages
 import Home from './pages/Home/Index'

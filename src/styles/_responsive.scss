@@ -1,0 +1,142 @@
+@media screen and (max-width: 1240px) {
+  .banner-text {
+    font-size: 20px;
+  }
+
+  .gallery_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .toggles_container {
+    width: 100%;
+
+    .toggle {
+      width: 90%;
+    }
+  }
+
+  .appartment {
+    width: 90%;
+  }
+
+  .next_slider {
+    right: 50px;
+  }
+
+  .previous_slider {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+
+  .header, .banner {
+    width: 90%;
+  }
+
+  .gallery_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 10px;
+    margin: 10px auto;
+    background-color: #fff;
+  }
+
+  .gallery_item {
+    margin: 20px auto;
+  }
+
+  .appartment {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &__titleh1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      &__titleh2 {
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+    }
+    
+
+  .owner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    &__content {
+      display: flex;
+      align-items: center;
+  
+      &__name {
+        text-align: right;
+        width: 80px;
+        margin-right: 10px;
+      }
+  
+      &__picture {
+        border-radius: 100px;
+        height: 64px;
+      }
+    }
+  }
+  
+
+  .tags-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+
+  .toggles_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .toggle {
+      width: 100%;
+    }
+  }
+
+  header {
+    .menu a {
+      margin: 0 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .logo {
+      padding-top: 25px;
+
+      img {
+        width: 145px;
+      }
+    }
+  }
+
+  .next_slider {
+    right: 80px;
+  }
+
+  .previous_slider {
+    left: 80px;
+  }
+}
+
+.footer {
+  margin-top: 10px;
+}
+}

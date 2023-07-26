@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+}
+
+.previous_slider {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 9;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.next_slider {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 9;
+  font-size: 50px;
+  cursor: pointer;
+}

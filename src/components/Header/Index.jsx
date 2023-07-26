@@ -4,7 +4,7 @@ import logo from "../../Assets/logo_kasa.svg"  // Change Logo to logo and remove
 
 function Header() {
   return (
-    <header>
+    <header className='header'>
       <div className="logo">
         <img src={logo} alt="logo kasa" />
       </div>
