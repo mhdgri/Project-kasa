@@ -5,9 +5,7 @@
 }
 
 .container-tags-stars {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex-direction-row;
   justify-content: space-between;
 }
 
@@ -21,8 +19,8 @@
 
 .tags {
   height: 25px;
-  background-color: #ff6060;
-  color: #fff;
+  background-color: $color-secondary;
+  color: $color-white;
   border-radius: 15px;
   padding: 5px 15px;
   text-align: center;

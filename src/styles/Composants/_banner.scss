@@ -1,15 +1,12 @@
 .banner {
-  width: min(1240px, 80%);
+  @include container;
   border-radius: 25px;
-  background: #000;
-  margin: 0 auto;
+  background: $color-dark;
   min-height: 200px;
   overflow: hidden;
   background-position: center;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   &::before {
     content: '';
@@ -24,7 +21,7 @@
 }
 
 .banner-text {
-  color: #fff;
+  color: $color-white;
   font-size: 26px;
   text-align: center;
   z-index: 2;

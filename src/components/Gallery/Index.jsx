@@ -7,8 +7,8 @@ import Logements from '../../logements.json';
 function Gallery() {
   return (
     <GalleryContainer>
-      {Logements.map((logement, index) => (
-        <a href={`details/${index}`} key={index}>
+      {Logements.map((logement, id) => (
+        <a href={`details/${logement.id}`} key={id}>
           <GalleryItems
             text={logement.title}
             urlImage={logement.cover}

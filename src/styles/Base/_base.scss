@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-primary;
+  @include font-smoothing;
+}
+
+code {
+  font-family: $font-family-code;
+}

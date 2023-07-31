@@ -1,6 +1,6 @@
 header {
   display: flex;
-  width: min(1240px, 80%);
+  width: $container-width;
   height: 100px;
   margin: 40px auto;
   padding: 0 10px;
@@ -21,7 +21,7 @@ header {
     padding-left: 10px;
 
     a {
-      color: #eb7676;
+      color: $color-primary;
       margin: 0 26px;
       font-size: 24px;
       text-decoration: none;

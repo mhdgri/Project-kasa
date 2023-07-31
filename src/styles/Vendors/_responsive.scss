@@ -4,8 +4,7 @@
   }
 
   .gallery_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include grid-columns($num: 2, $fr: 1fr);
   }
 
   .toggles_container {
@@ -41,7 +40,7 @@
     grid-template-columns: 1fr;
     padding: 10px 10px;
     margin: 10px auto;
-    background-color: #fff;
+    background-color: $color-white;
   }
 
   .gallery_item {
@@ -55,9 +54,7 @@
     }
 
     .details {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      @include flex-direction-column;
       &__titleh1 {
         font-size: 36px;
         margin-bottom: 20px;
@@ -73,10 +70,9 @@
     
 
   .owner {
-    display: flex;
+    @include flex-space-between;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
     &__content {
       display: flex;
       align-items: center;
