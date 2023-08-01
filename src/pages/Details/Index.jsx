@@ -71,12 +71,12 @@ function Details() {
       </div>
       <div className="toggles_container no_bg">
         <Toggle title="Description">{currentApt.description}</Toggle>
-        <Toggle title="Equipements">
-          <ul>
+        <Toggle  title="Equipements">
+          <div>
             {equipements.map((equipement, index) => {
-              return <li key={index}>{equipement}</li>
+              return <div key={index}>{equipement}</div>
             })}
-          </ul>
+          </div>
         </Toggle>
       </div>
     </div>
