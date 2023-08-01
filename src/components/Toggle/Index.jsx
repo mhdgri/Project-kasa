@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'; // Vous pouvez simplement importer faChevronUp ici
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Toggle({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +16,8 @@ function Toggle({ title, children }) {
         {title}{' '}
         <span>
           <FontAwesomeIcon
-            icon={faChevronUp} // Utilisez toujours la flèche vers le haut comme icône
-            style={{ transform: isOpen ? 'rotate(-180deg)' : 'rotate(0deg)' }} // Appliquez la rotation en fonction de l'état d'ouverture
+            icon={faChevronUp}
+            style={{ transform: isOpen ? 'rotate(-180deg)' : 'rotate(0deg)' }}
           ></FontAwesomeIcon>
         </span>
       </h1>
