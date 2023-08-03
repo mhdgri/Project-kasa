@@ -69,9 +69,9 @@ function Details() {
           <p className="owner__stars">{stars}</p>
         </div>
       </div>
-      <div className="toggles_container no_bg">
-        <Toggle title="Description">{currentApt.description}</Toggle>
-        <Toggle  title="Equipements">
+      <div className="content-toggleapt no_bg">
+        <Toggle variant='apt' title="Description">{currentApt.description}</Toggle>
+        <Toggle variant='apt'  title="Equipements">
           <div>
             {equipements.map((equipement, index) => {
               return <div key={index}>{equipement}</div>

@@ -1,18 +1,14 @@
 @media screen and (max-width: 1240px) {
   .banner-text {
-    font-size: 20px;
+    font-size: 36px;
   }
 
   .gallery_container {
     @include grid-columns($num: 2, $fr: 1fr);
   }
 
-  .toggles_container {
+  .content-toggleapt {
     width: 100%;
-
-    .toggle {
-      width: 90%;
-    }
   }
 
   .appartment {
@@ -29,6 +25,26 @@
 }
 
 @media screen and (max-width: 769px) {
+
+  .banner-text {
+    font: {
+      size: 24px;
+      weight: 500;
+    }
+  }
+
+  .toggle-about {
+    width: 90%;
+    margin: 30px auto;
+    h1 {
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .toggle-text-about {
+      margin: 0 auto;
+    }
+  }
 
   .header, .banner {
     width: 90%;
@@ -52,87 +68,179 @@
       display: flex;
       flex-direction: column;
     }
+    .toggle {
+      width: 90px;
+    }
+
+    .content-toggleapt {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      .toggle-apt  {
+        margin: 15px auto;
+        width: 100%;
+        h1 {
+          font : {
+            size: 13px;
+            weight: 500;
+          }
+        }
+      }
+    }
 
     .details {
       @include flex-direction-column;
       &__titleh1 {
-        font-size: 36px;
+        font-size: 18px;
         margin-bottom: 20px;
         font-weight: 500;
       }
       &__titleh2 {
-        font-size: 18px;
+        font-size: 14px;
         margin: 0;
         margin-bottom: 20px;
         font-weight: 500;
       }
     }
     
-
   .owner {
     @include flex-space-between;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items:center;
+    &__stars {
+      margin: 0;
+      font-size: 16px;
+    }
     &__content {
       display: flex;
       align-items: center;
-  
+      margin: 0;
       &__name {
         text-align: right;
         width: 80px;
         margin-right: 10px;
+        font : {
+          size: 12px;
+          weight: 500;
+        }
       }
   
       &__picture {
         border-radius: 100px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
       }
     }
   }
-  
 
   .tags-container {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
+    .tags {
+      font : {
+        size: 10px;
+        weight:500;
+      }
+      border-radius: 10px;
+    }
   }
 
-  .toggles_container {
+  .slider {
+    .next_slider {
+      font-size: 32px;
+      position: absolute;
+      right: 20px;
+    }
+  
+    .previous_slider {
+      font-size: 32px;
+      position: absolute;
+      left: 20px;
+      
+    }
+  }
+  
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+  margin: 40px auto;
+  padding: 0 10px;
+
+  .logo {
+    width: 20%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    img {
+      width: 145px;
+      height: 46px;
+    }
+  }
+
+  .menu {
+    width: 80%;
+    height: 17px;
+    text-align: left;
     display: flex;
-    width: 100%;
-    flex-direction: column;
-
-    .toggle {
-      width: 100%;
-    }
-  }
-
-  header {
-    .menu a {
-      margin: 0 10px;
-      font-size: 14px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    a {
+      height: 46px;
+      color: $color-primary;
+      margin: 0 15px;
       text-transform: uppercase;
-    }
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
 
-    .logo {
-      padding-top: 25px;
-
-      img {
-        width: 145px;
+      &:hover, &.active {
+        text-decoration: underline;
       }
     }
   }
+}
 
-  .next_slider {
-    right: 80px;
+.error {
+  width: min(1240px, 90%);
+  margin: 120px auto;
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: center;
+  color: $color-secondary;
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 100px;
+    margin: 0 0;
   }
 
-  .previous_slider {
-    left: 80px;
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 160px;
+  }
+
+  .back_to_home a {
+    font-size: 14px;
+    color: $color-secondary;
+    font-weight: 500;
   }
 }
 
-.footer {
-  margin-top: 10px;
-}
+
+
+  .footer {
+    margin-top: 10px;
+    &__text {
+      font-size: 12px;
+    }
+  }
+
 }
