@@ -14,17 +14,21 @@
 }
 
 .container-tags-stars__icon--color-grey {
-  color: #f3f3f3;
+  color: #E3E3E3;
 }
 
 .tags {
   width: auto;
   height: 25px;
+  padding: 0 15px;
   background-color: $color-secondary;
   color: $color-white;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   margin-right: 10px;
-  font-weight: 500;
+  font: {
+    size: 14px;
+    weight: 500;
+  }
   line-height: 25px;
 }

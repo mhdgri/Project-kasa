@@ -1,12 +1,12 @@
 import React from 'react'
 import Banner from '../../components/Banner/Index'
 import Toggle from '../../components/Toggle/Index'
-import aboutBanner from "../../Assets/banner-about.png"
+import aboutBanner from "../../Assets/Banner-about.png"
 
 function About() {
   return (
     <div>
-      <Banner urlImage={aboutBanner} />
+      <Banner  urlImage={aboutBanner} />
       <div className='content-toggleabout'>
         <Toggle variant='about' title="Fiabilité">
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les

@@ -24,7 +24,7 @@ Banner.propTypes = {
 }
 
 Banner.defaultProps = {
-  height: '218px'
+  height: '223px'
 }
 
 export default Banner

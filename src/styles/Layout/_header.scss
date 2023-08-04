@@ -3,13 +3,16 @@ header {
   width: $container-width;
   height: 100px;
   margin: 40px auto;
-  padding: 0 10px;
 
   .logo {
     width: 50%;
     height: 100px;
     padding-top: 10px;
     box-sizing: border-box;
+    img {
+      width: 210px;
+      height: 68px;
+    }
   }
 
   .menu {
@@ -18,11 +21,10 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-left: 10px;
-
+    column-gap: 57px;
     a {
       color: $color-primary;
-      margin: 0 26px;
+      margin: 0;
       font-size: 24px;
       text-decoration: none;
 

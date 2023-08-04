@@ -71,7 +71,7 @@ function Details() {
       </div>
       <div className="content-toggleapt no_bg">
         <Toggle variant='apt' title="Description">{currentApt.description}</Toggle>
-        <Toggle variant='apt'  title="Equipements">
+        <Toggle variant='apt'  title="Équipements">
           <div>
             {equipements.map((equipement, index) => {
               return <div key={index}>{equipement}</div>

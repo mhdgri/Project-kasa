@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../components/Banner/Index'
 import Gallery from '../../components/Gallery/Index'
-import bannerImage from '../../Assets/banner1.jpg'
+import bannerImage from '../../Assets/banner-home.png'
 
 function Home() {
   return (

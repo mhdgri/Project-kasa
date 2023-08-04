@@ -1,21 +1,24 @@
+.content-toggleapt,
+.content-toggleabout {
+  width: 100%;
+}
 .content-toggleapt {
   display: flex;
-  width: 100%;
   gap: 5%;
 }
 
 .content-toggleabout {
   margin-top: 40px;
-  width: 100%;
 }
 
 .toggle {
   h1 {
     @include flex-space-between;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
     color: $color-white;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     background-color: $color-secondary;
     cursor: pointer;
   }
@@ -27,9 +30,7 @@
     display: none;
     min-height: 0;
     opacity: 0;
-    transition: 
-      max-height 0.3s ease,
-      opacity 0.3s ease;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
     &.open {
       display: block;
       padding: 20px;
@@ -37,10 +38,9 @@
       max-height: 1000px;
     }
   }
-}
-
-.toggle span svg {
-  transition: transform 0.3s ease;
+  span svg {
+    transition: transform 0.3s ease;
+  }
 }
 
 .toggle-apt {
@@ -49,10 +49,6 @@
   h1 {
     border-radius: 10px;
   }
-  .toggle-text-apt {
-    margin: 0 auto;
-  }
-
 }
 
 .toggle-about {
@@ -61,9 +57,10 @@
   h1 {
     border-radius: 5px;
   }
-  .toggle-text-about {
-    margin: 0 auto;
-  }
 }
 
+.toggle-text-apt,
+.toggle-text-about {
+  margin: 0 auto;
+}
 
