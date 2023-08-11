@@ -9,7 +9,6 @@ function Banner(props) {
     >
       <div className="banner__text">
         <h1 style={{ fontWeight: 300 }}>{props.text}</h1>
-        <p>{props.subTitle}</p>
       </div>
     </div>
   )
@@ -18,7 +17,6 @@ function Banner(props) {
 Banner.propTypes = {
   urlImage: PropTypes.string,
   text: PropTypes.string,
-  subTitle: PropTypes.string,
   height: PropTypes.string,
   width: PropTypes.string
 }

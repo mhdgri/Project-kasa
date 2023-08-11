@@ -13,16 +13,21 @@ function Slider({ images }) {
 
   const handlePrevious = () => {
     setCurrent(current > 0 ? current - 1 : images.length - 1)
+    setCurrent( images < images.length ? false : faChevronLeft )
   }
 
   return (
     <div className="slider">
-      <div className="slider__next" onClick={handleNext}>
-        <FontAwesomeIcon icon={faChevronRight} />
-      </div>
-      <div className="slider__previous" onClick={handlePrevious}>
-      <FontAwesomeIcon icon={faChevronLeft} />
-      </div>
+      {images.length > 1 && (
+        <div className="slider__next" onClick={handleNext}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </div>
+      )}
+      {images.length > 1 && (
+        <div className="slider__previous" onClick={handlePrevious}>
+        <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
+      )}
       <Banner className='slider__banner' urlImage={images[current]} height="415px" width="100%"/>
       <div className="slider__counter">{`${current}/${images.length - 1}`}</div>
     </div>
