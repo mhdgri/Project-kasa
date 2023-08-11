@@ -17,13 +17,14 @@ function Slider({ images }) {
 
   return (
     <div className="slider">
-      <div className="next_slider" onClick={handleNext}>
+      <div className="slider__next" onClick={handleNext}>
         <FontAwesomeIcon icon={faChevronRight} />
       </div>
-      <div className="previous_slider" onClick={handlePrevious}>
+      <div className="slider__previous" onClick={handlePrevious}>
       <FontAwesomeIcon icon={faChevronLeft} />
       </div>
-      <Banner urlImage={images[current]} height="415px" width="100%"/>
+      <Banner className='slider__banner' urlImage={images[current]} height="415px" width="100%"/>
+      <div className="slider__counter">{`${current}/${images.length - 1}`}</div>
     </div>
   )
 }

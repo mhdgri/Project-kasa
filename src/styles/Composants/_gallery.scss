@@ -1,21 +1,22 @@
 .gallery_container {
   @include container;
   @include grid-columns($num: 3, $fr: 1fr);
-  padding: 50px 50px;
+  padding: 30px 30px;
   box-sizing: border-box;
   min-height: 200px;
   margin-top: 50px;
   border-radius: 20px;
   background-color: $color-light;
+  gap: 30px;
 }
 
 .gallery_item {
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
   height: 340px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  margin: 30px auto;
   position: relative;
 
   span {

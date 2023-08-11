@@ -1,8 +1,18 @@
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
 
-  .banner-text {
-    font-size: 22px;
-    font-weight: 500;
+  .header {
+    & .menu {
+      & a {
+        font-size:18px;
+      }
+    }
+  }
+
+  .banner {
+    &__text {
+      font-size: 22px;
+      font-weight: 500;
+    }
   }
 
   .gallery_container {
@@ -17,21 +27,85 @@
     width: 85%;
   }
 
-  .next_slider {
-    right: 50px;
+  .slider {
+    &__next, &__previous {
+      font-size: 46px;
+      transform: translateY(60%);
+    }
+
+    &__next {
+      right: 20px;
+    }
+
+    &__previous {
+      left: 20px;
+    }
   }
 
-  .previous_slider {
-    left: 50px;
+  .details {
+    &__titleh1 {
+      font-size: 28px;
+      font-weight: 500;
+    }
+    &__titleh2 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .tags-container {
+    & .tags {
+      font-size: 12px;
+    }
+  }
+
+  .owner {
+    &__content {
+      &--name {
+        font-size: 15px;
+      }
+      &--picture {
+        height: 48px;
+        width: 48px;
+      }
+    }
+    &__stars {
+      font-size: 20px;
+    }
+  }
+
+  .toggle {
+    .toggle-text {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+    &__text {
+      font-size: 18px;
+    }
   }
 }
 
 @media screen and (max-width: 769px) {
 
-  .banner-text {
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 20px;
+  .banner {
+    &__text {
+      font-size: 18px;
+      margin-left: 20px;
+    }
+  }
+
+  .toggle{
+    .toggle-text{
+      font-size: 12px;
+      &.open {
+        padding: 15px;
+      }
+    }
   }
 
   .toggle-about {
@@ -56,12 +130,13 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px 0px;
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: $color-white;
   }
 
   .gallery_item {
-    margin: 20px auto;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .appartment {
@@ -83,7 +158,6 @@
         width: 100%;
         h1 {
           font-size: 13px;
-          font-weight: 500;
           border-radius: 5px;
         }
       }
@@ -93,14 +167,11 @@
     .details {
       @include flex-direction-column;
       &__titleh1 {
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 22px;
         font-weight: 500;
       }
       &__titleh2 {
         font-size: 14px;
-        margin: 0;
-        margin-bottom: 20px;
         font-weight: 500;
       }
     }
@@ -119,7 +190,7 @@
       display: flex;
       align-items: center;
       margin: 0;
-      &__name {
+      &--name {
         text-align: right;
         width: 80px;
         margin-right: 10px;
@@ -127,7 +198,7 @@
         font-weight: 500;
       }
 
-      &__picture {
+      &--picture {
         border-radius: 100px;
         width: 32px;
         height: 32px;
@@ -142,20 +213,28 @@
     font-size: 10px;
     font-weight: 500;
     border-radius: 10px;
+    & .tags {
+      font-size: 10px;
+    }
   }
   
 
   .slider {
-    .next_slider {
+    &__counter {
+      display: none;
+    }
+
+    &__next, &__previous {
       font-size: 32px;
-      position: absolute;
+      transform: translateY(90%);
+    }
+
+    &__next {
       right: 20px;
     }
-    .previous_slider {
-      font-size: 32px;
-      position: absolute;
+
+    &__previous {
       left: 20px;
-      
     }
   }
 
@@ -164,6 +243,7 @@
     align-items: center;
     height: 80px;
     margin: 30px auto 0;
+    width: 85%;
     .logo {
       width: 20%;
       padding-top: 10px;
@@ -181,12 +261,12 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      column-gap: 20px;
+      column-gap: 25px;
       a {
         height: 46px;
         color: $color-primary;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 500;
         text-decoration: none;
 

@@ -2,7 +2,6 @@ import React from 'react'
 import './style.scss'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-//import './style.css'
 import reportWebVitals from './reportWebVitals'
 
 
@@ -26,7 +25,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/details/:id" element={<Details />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>

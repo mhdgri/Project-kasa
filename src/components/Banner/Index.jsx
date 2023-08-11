@@ -7,7 +7,7 @@ function Banner(props) {
       className="banner"
       style={{ backgroundImage: `url(${props.urlImage})`, height: props.height, width: props.width }}
     >
-      <div className="banner-text">
+      <div className="banner__text">
         <h1 style={{ fontWeight: 300 }}>{props.text}</h1>
         <p>{props.subTitle}</p>
       </div>

@@ -7,12 +7,14 @@
   text-align: center;
   @include flex-center;
   flex-direction: column;
-}
 
-.footer__logo {
-  margin-top: 3.5rem;
-}
-
-.footer__text {
-  padding-top: 2.5rem;
+  &__text {
+    padding-top: 2.5rem;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  &__logo {
+    margin-top: 3.5rem;
+  }
 }

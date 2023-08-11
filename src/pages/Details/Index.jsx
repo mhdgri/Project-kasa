@@ -51,7 +51,7 @@ function Details() {
             <h1 className="details__titleh1">{currentApt.title}</h1>
             <h2 className="details__titleh2">{currentApt.location}</h2>
           </div>
-          <TagsContainer>
+          <TagsContainer >
             {tags.map((tag, index) => {
               return <Tags text={tag} key={index} />
             })}
@@ -59,9 +59,9 @@ function Details() {
         </div>
         <div className="owner">
           <div className="owner__content">
-            <div className="owner__content__name"> {currentApt.host.name}</div>
+            <div className="owner__content--name"> {currentApt.host.name}</div>
             <img
-              className="owner__content__picture"
+              className="owner__content--picture"
               src={currentApt.host.picture}
               alt={`${currentApt.host.name}`}
             />
