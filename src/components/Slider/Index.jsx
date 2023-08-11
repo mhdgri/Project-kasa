@@ -13,7 +13,6 @@ function Slider({ images }) {
 
   const handlePrevious = () => {
     setCurrent(current > 0 ? current - 1 : images.length - 1)
-    setCurrent( images < images.length ? false : faChevronLeft )
   }
 
   return (

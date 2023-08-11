@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../components/Banner/Index'
 import Toggle from '../../components/Toggle/Index'
-import aboutBanner from "../../Assets/Banner-about.png"
+import aboutBanner from "../../Assets/banner-about.png"
 
 function About() {
   return (
